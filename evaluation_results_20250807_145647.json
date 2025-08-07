@@ -1,0 +1,5166 @@
+{
+  "timestamp": "2025-08-07T14:56:47.010193",
+  "total_tests": 12,
+  "successful_tests": 12,
+  "average_score": 94.58872803609647,
+  "category_scores": {
+    "business": 92.3076923076923,
+    "education": 95.22222222222223,
+    "technology": 100.0,
+    "news": 94.73684210526315,
+    "personal": 90.9090909090909,
+    "finance": 93.33333333333333,
+    "social": 90.0,
+    "economics": 96.66666666666666,
+    "general": 100.0,
+    "history": 90.0
+  },
+  "detailed_results": [
+    {
+      "test_case": {
+        "original": "côn viec kin doanh thì rất kho khan nên toi quyết dinh chuyển sang nghề khac",
+        "expected_corrections": {
+          "côn": "công",
+          "viec": "việc",
+          "kin": "kinh",
+          "doanh": "doanh",
+          "kho": "khó",
+          "khan": "khăn",
+          "toi": "tôi",
+          "quyết": "quyết",
+          "dinh": "định",
+          "chuyển": "chuyển",
+          "sang": "sang",
+          "nghề": "nghề",
+          "khac": "khác"
+        },
+        "category": "business"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "công viec kinh doanh thì rất khó khăn nên tôi quyết định chuyển sang nghề khác",
+        "error_categories": {
+          "capitalization": 5,
+          "compound_word": 3,
+          "sticky_typing": 3,
+          "tone_error": 9,
+          "typo_error": 2
+        },
+        "error_count": 22,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "công",
+            "position": 0,
+            "suggestions": [
+              "công"
+            ],
+            "word": "côn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "kinh",
+            "position": 9,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kin"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tôi",
+            "position": 40,
+            "suggestions": [
+              "tôi"
+            ],
+            "word": "toi"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "định",
+            "position": 50,
+            "suggestions": [
+              "định"
+            ],
+            "word": "dinh"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "khác",
+            "position": 72,
+            "suggestions": [
+              "khác"
+            ],
+            "word": "khac"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "quyết",
+            "position": 44,
+            "suggestions": [
+              "quyết"
+            ],
+            "word": "quyết"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "khó khăn",
+            "position": 27,
+            "suggestions": [
+              "khó khăn"
+            ],
+            "word": "kho khan"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "quyết định",
+            "position": 44,
+            "suggestions": [
+              "quyết định"
+            ],
+            "word": "quyết dinh"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chuyển sang",
+            "position": 55,
+            "suggestions": [
+              "chuyển sang"
+            ],
+            "word": "chuyển sang"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "khó khăn",
+            "position": 27,
+            "suggestions": [
+              "khó khăn"
+            ],
+            "word": "kho khan"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "quyết định",
+            "position": 44,
+            "suggestions": [
+              "quyết định"
+            ],
+            "word": "quyết dinh"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "chuyển sang",
+            "position": 55,
+            "suggestions": [
+              "chuyển sang"
+            ],
+            "word": "chuyển sang"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "khác",
+            "position": 72,
+            "suggestions": [
+              "khác"
+            ],
+            "word": "khac"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "quyết",
+            "position": 44,
+            "suggestions": [
+              "quyết"
+            ],
+            "word": "quyết"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "doanh",
+            "position": 13,
+            "suggestions": [
+              "doanh"
+            ],
+            "word": "doanh"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "quyết",
+            "position": 44,
+            "suggestions": [
+              "quyết"
+            ],
+            "word": "quyết"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "chuyển",
+            "position": 55,
+            "suggestions": [
+              "chuyển"
+            ],
+            "word": "chuyển"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "sang",
+            "position": 62,
+            "suggestions": [
+              "sang"
+            ],
+            "word": "sang"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "nghề",
+            "position": 67,
+            "suggestions": [
+              "nghề"
+            ],
+            "word": "nghề"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "khó khăn",
+            "position": 27,
+            "suggestions": [
+              "khó khăn"
+            ],
+            "word": "kho khan"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "quyết định",
+            "position": 44,
+            "suggestions": [
+              "quyết định"
+            ],
+            "word": "quyết dinh"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "chuyển sang",
+            "position": 55,
+            "suggestions": [
+              "chuyển sang"
+            ],
+            "word": "chuyển sang"
+          }
+        ],
+        "original_text": "côn viec kin doanh thì rất kho khan nên toi quyết dinh chuyển sang nghề khac",
+        "processing_time_ms": 8.04,
+        "text_length": 76,
+        "timestamp": "2025-08-07T14:40:23.166124",
+        "word_probabilities": {
+          "chuyển": 0.8,
+          "côn": 0.95,
+          "dinh": 0.95,
+          "doanh": 0.8,
+          "khac": 0.9,
+          "khan": 0.3,
+          "kho": 0.3,
+          "kin": 0.95,
+          "nghề": 0.8,
+          "nên": 0.3,
+          "quyết": 0.8,
+          "rất": 0.3,
+          "sang": 0.8,
+          "thì": 0.3,
+          "toi": 0.95,
+          "viec": 0.3
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 13,
+        "detected_errors": 13,
+        "corrected_errors": 12,
+        "missed_errors": 1,
+        "false_positives": 0,
+        "precision": 0.9230769230769231,
+        "recall": 0.9230769230769231,
+        "f1_score": 0.9230769230769231,
+        "accuracy": 0.9230769230769231,
+        "score_percentage": 92.3076923076923
+      },
+      "processing_time": 10.980844497680664,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "toi dang là sinh diên nam hai ở truong đạ hoc khoa jọc tự nhiên , trogn năm ke tiep toi sẽ chọn chuyen nganh về trí tue nhana tạo",
+        "expected_corrections": {
+          "toi": "tôi",
+          "dang": "đang",
+          "sinh": "sinh",
+          "diên": "viên",
+          "nam": "Nam",
+          "hai": "Hai",
+          "truong": "trường",
+          "đạ": "đại",
+          "hoc": "học",
+          "khoa": "khoa",
+          "jọc": "học",
+          "tự": "tự",
+          "nhiên": "nhiên",
+          "trogn": "trong",
+          "năm": "năm",
+          "ke": "kế",
+          "tiep": "tiếp",
+          "chọn": "chọn",
+          "chuyen": "chuyên",
+          "nganh": "ngành",
+          "về": "về",
+          "trí": "trí",
+          "tue": "tuệ",
+          "nhana": "nhân",
+          "tạo": "tạo"
+        },
+        "category": "education"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "tôi đang là sinh viên năm hai ở trường đại học khoa học tự nhiên , trong năm kế tiếp tôi sẽ chọn chuyên ngành về trí tuệ nhân tạo",
+        "error_categories": {
+          "capitalization": 15,
+          "compound_word": 7,
+          "spacing_punctuation": 1,
+          "sticky_typing": 10,
+          "tone_error": 21,
+          "typo_error": 14
+        },
+        "error_count": 68,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "tôi",
+            "position": 0,
+            "suggestions": [
+              "tôi"
+            ],
+            "word": "toi"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tôi",
+            "position": 84,
+            "suggestions": [
+              "tôi"
+            ],
+            "word": "toi"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "trường",
+            "position": 32,
+            "suggestions": [
+              "trường"
+            ],
+            "word": "truong"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đại",
+            "position": 39,
+            "suggestions": [
+              "đại"
+            ],
+            "word": "đạ"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "học",
+            "position": 42,
+            "suggestions": [
+              "học"
+            ],
+            "word": "hoc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tuệ",
+            "position": 116,
+            "suggestions": [
+              "tuệ"
+            ],
+            "word": "tue"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "Nam",
+            "position": 22,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "kế",
+            "position": 76,
+            "suggestions": [
+              "kế"
+            ],
+            "word": "ke"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tiếp",
+            "position": 79,
+            "suggestions": [
+              "tiếp"
+            ],
+            "word": "tiep"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chuyên",
+            "position": 96,
+            "suggestions": [
+              "chuyên"
+            ],
+            "word": "chuyen"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "ngành",
+            "position": 103,
+            "suggestions": [
+              "ngành"
+            ],
+            "word": "nganh"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tạo",
+            "position": 126,
+            "suggestions": [
+              "tạo"
+            ],
+            "word": "tạo"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đang",
+            "position": 4,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "dang"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "trong",
+            "position": 66,
+            "suggestions": [
+              "trong"
+            ],
+            "word": "trogn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chọn",
+            "position": 91,
+            "suggestions": [
+              "chọn"
+            ],
+            "word": "chọn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "về",
+            "position": 109,
+            "suggestions": [
+              "về"
+            ],
+            "word": "về"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "trí",
+            "position": 112,
+            "suggestions": [
+              "trí"
+            ],
+            "word": "trí"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "ở",
+            "position": 30,
+            "suggestions": [
+              "ở"
+            ],
+            "word": "ở"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "năm hai",
+            "position": 22,
+            "suggestions": [
+              "năm hai"
+            ],
+            "word": "nam hai"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "sẽ chọn",
+            "position": 88,
+            "suggestions": [
+              "sẽ chọn"
+            ],
+            "word": "sẽ chọn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "về trí",
+            "position": 109,
+            "suggestions": [
+              "về trí"
+            ],
+            "word": "về trí"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "sinh viên",
+            "position": 12,
+            "suggestions": [
+              "sinh viên"
+            ],
+            "word": "sinh diên"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "chuyên ngành",
+            "position": 96,
+            "suggestions": [
+              "chuyên ngành"
+            ],
+            "word": "chuyen nganh"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "kế tiếp",
+            "position": 76,
+            "suggestions": [
+              "kế tiếp"
+            ],
+            "word": "ke tiep"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "trong năm",
+            "position": 66,
+            "suggestions": [
+              "trong năm"
+            ],
+            "word": "trogn năm"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "nhân tạo",
+            "position": 120,
+            "suggestions": [
+              "nhân tạo"
+            ],
+            "word": "nhana tạo"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "năm hai",
+            "position": 22,
+            "suggestions": [
+              "năm hai"
+            ],
+            "word": "nam hai"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "sẽ chọn",
+            "position": 88,
+            "suggestions": [
+              "sẽ chọn"
+            ],
+            "word": "sẽ chọn"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "về trí",
+            "position": 109,
+            "suggestions": [
+              "về trí"
+            ],
+            "word": "về trí"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "tạo",
+            "position": 126,
+            "suggestions": [
+              "tạo"
+            ],
+            "word": "tạo"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "Nam",
+            "position": 22,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "học",
+            "position": 51,
+            "suggestions": [
+              "học"
+            ],
+            "word": "jọc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tuệ",
+            "position": 116,
+            "suggestions": [
+              "tuệ"
+            ],
+            "word": "tue"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Nam",
+            "position": 22,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "kế",
+            "position": 76,
+            "suggestions": [
+              "kế"
+            ],
+            "word": "ke"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tiếp",
+            "position": 79,
+            "suggestions": [
+              "tiếp"
+            ],
+            "word": "tiep"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chuyên",
+            "position": 96,
+            "suggestions": [
+              "chuyên"
+            ],
+            "word": "chuyen"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "ngành",
+            "position": 103,
+            "suggestions": [
+              "ngành"
+            ],
+            "word": "nganh"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tạo",
+            "position": 126,
+            "suggestions": [
+              "tạo"
+            ],
+            "word": "tạo"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đang",
+            "position": 4,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "dang"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "trong",
+            "position": 66,
+            "suggestions": [
+              "trong"
+            ],
+            "word": "trogn"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chọn",
+            "position": 91,
+            "suggestions": [
+              "chọn"
+            ],
+            "word": "chọn"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "về",
+            "position": 109,
+            "suggestions": [
+              "về"
+            ],
+            "word": "về"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "trí",
+            "position": 112,
+            "suggestions": [
+              "trí"
+            ],
+            "word": "trí"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "ở",
+            "position": 30,
+            "suggestions": [
+              "ở"
+            ],
+            "word": "ở"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "sinh",
+            "position": 12,
+            "suggestions": [
+              "sinh"
+            ],
+            "word": "sinh"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Nam",
+            "position": 22,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "hai",
+            "position": 26,
+            "suggestions": [
+              "hai"
+            ],
+            "word": "hai"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "ở",
+            "position": 30,
+            "suggestions": [
+              "ở"
+            ],
+            "word": "ở"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "khoa",
+            "position": 46,
+            "suggestions": [
+              "khoa"
+            ],
+            "word": "khoa"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "tự",
+            "position": 55,
+            "suggestions": [
+              "tự"
+            ],
+            "word": "tự"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "nhiên",
+            "position": 58,
+            "suggestions": [
+              "nhiên"
+            ],
+            "word": "nhiên"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "trong",
+            "position": 66,
+            "suggestions": [
+              "trong"
+            ],
+            "word": "trogn"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "sẽ",
+            "position": 88,
+            "suggestions": [
+              "sẽ"
+            ],
+            "word": "sẽ"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "chọn",
+            "position": 91,
+            "suggestions": [
+              "chọn"
+            ],
+            "word": "chọn"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "về",
+            "position": 109,
+            "suggestions": [
+              "về"
+            ],
+            "word": "về"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "trí",
+            "position": 112,
+            "suggestions": [
+              "trí"
+            ],
+            "word": "trí"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "nhân",
+            "position": 120,
+            "suggestions": [
+              "nhân"
+            ],
+            "word": "nhana"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "tạo",
+            "position": 126,
+            "suggestions": [
+              "tạo"
+            ],
+            "word": "tạo"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "năm hai",
+            "position": 22,
+            "suggestions": [
+              "năm hai"
+            ],
+            "word": "nam hai"
+          },
+          {
+            "category": "spacing_punctuation",
+            "corrected": "nhiên, trogn",
+            "position": 58,
+            "suggestions": [
+              "\\1, \\2"
+            ],
+            "word": "nhiên , trogn"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "sinh viên",
+            "position": 12,
+            "suggestions": [
+              "sinh viên"
+            ],
+            "word": "sinh diên"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "chuyên ngành",
+            "position": 96,
+            "suggestions": [
+              "chuyên ngành"
+            ],
+            "word": "chuyen nganh"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "năm hai",
+            "position": 22,
+            "suggestions": [
+              "năm hai"
+            ],
+            "word": "nam hai"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "sẽ chọn",
+            "position": 88,
+            "suggestions": [
+              "sẽ chọn"
+            ],
+            "word": "sẽ chọn"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "về trí",
+            "position": 109,
+            "suggestions": [
+              "về trí"
+            ],
+            "word": "về trí"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "tạo",
+            "position": 126,
+            "suggestions": [
+              "tạo"
+            ],
+            "word": "tạo"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "Nam",
+            "position": 22,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          }
+        ],
+        "original_text": "toi dang là sinh diên nam hai ở truong đạ hoc khoa jọc tự nhiên , trogn năm ke tiep toi sẽ chọn chuyen nganh về trí tue nhana tạo",
+        "processing_time_ms": 7.55,
+        "text_length": 129,
+        "timestamp": "2025-08-07T14:40:23.175494",
+        "word_probabilities": {
+          ",": 0.3,
+          "chuyen": 0.9,
+          "chọn": 0.8,
+          "dang": 0.9,
+          "diên": 0.3,
+          "hai": 0.8,
+          "hoc": 0.95,
+          "jọc": 0.9,
+          "ke": 0.9,
+          "khoa": 0.8,
+          "là": 0.05,
+          "nam": 0.375,
+          "nganh": 0.9,
+          "nhana": 0.8,
+          "năm": 0.05,
+          "sinh": 0.8,
+          "sẽ": 0.8,
+          "tiep": 0.9,
+          "toi": 0.95,
+          "trogn": 0.8,
+          "truong": 0.95,
+          "trí": 0.8,
+          "tue": 0.9,
+          "tạo": 0.75,
+          "tự_nhiên": 0.3,
+          "về": 0.8,
+          "đạ": 0.95,
+          "ở": 0.8
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 25,
+        "detected_errors": 25,
+        "corrected_errors": 24,
+        "missed_errors": 1,
+        "false_positives": 0,
+        "precision": 0.96,
+        "recall": 0.96,
+        "f1_score": 0.96,
+        "accuracy": 0.96,
+        "score_percentage": 96.0
+      },
+      "processing_time": 7.26008415222168,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "Tôi  đang học AI ở trun tam AI viet nam",
+        "expected_corrections": {
+          "Tôi": "Tôi",
+          "đang": "đang",
+          "học": "học",
+          "AI": "AI",
+          "trun": "trung",
+          "tam": "tâm",
+          "viet": "Việt",
+          "nam": "Nam"
+        },
+        "category": "technology"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "Tôi đang học AI ở trung tâm AI Việt Nam",
+        "error_categories": {
+          "capitalization": 5,
+          "compound_word": 3,
+          "sticky_typing": 3,
+          "tone_error": 8,
+          "typo_error": 6
+        },
+        "error_count": 25,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "trung",
+            "position": 18,
+            "suggestions": [
+              "trung"
+            ],
+            "word": "trun"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tâm",
+            "position": 23,
+            "suggestions": [
+              "tâm"
+            ],
+            "word": "tam"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "Việt",
+            "position": 30,
+            "suggestions": [
+              "Việt"
+            ],
+            "word": "viet"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "Nam",
+            "position": 35,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đang",
+            "position": 4,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "ở",
+            "position": 16,
+            "suggestions": [
+              "ở"
+            ],
+            "word": "ở"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đang học",
+            "position": 4,
+            "suggestions": [
+              "đang học"
+            ],
+            "word": "đang học"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "AI ở",
+            "position": 13,
+            "suggestions": [
+              "AI ở"
+            ],
+            "word": "AI ở"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "đang học",
+            "position": 4,
+            "suggestions": [
+              "đang học"
+            ],
+            "word": "đang học"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "AI ở",
+            "position": 13,
+            "suggestions": [
+              "AI ở"
+            ],
+            "word": "AI ở"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "Nam",
+            "position": 35,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "trung",
+            "position": 18,
+            "suggestions": [
+              "trung"
+            ],
+            "word": "trun"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tâm",
+            "position": 23,
+            "suggestions": [
+              "tâm"
+            ],
+            "word": "tam"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Việt",
+            "position": 30,
+            "suggestions": [
+              "Việt"
+            ],
+            "word": "viet"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Nam",
+            "position": 35,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đang",
+            "position": 4,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "ở",
+            "position": 16,
+            "suggestions": [
+              "ở"
+            ],
+            "word": "ở"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Việt Nam",
+            "position": 30,
+            "suggestions": [
+              "Việt Nam"
+            ],
+            "word": "viet nam"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Nam",
+            "position": 35,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "ở",
+            "position": 16,
+            "suggestions": [
+              "ở"
+            ],
+            "word": "ở"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "học",
+            "position": 9,
+            "suggestions": [
+              "học"
+            ],
+            "word": "học"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "đang",
+            "position": 4,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "đang học",
+            "position": 4,
+            "suggestions": [
+              "đang học"
+            ],
+            "word": "đang học"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "AI ở",
+            "position": 13,
+            "suggestions": [
+              "AI ở"
+            ],
+            "word": "AI ở"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "Nam",
+            "position": 35,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          }
+        ],
+        "original_text": "Tôi  đang học AI ở trun tam AI viet nam",
+        "processing_time_ms": 6.74,
+        "text_length": 39,
+        "timestamp": "2025-08-07T14:40:23.183943",
+        "word_probabilities": {
+          "AI": 0.3,
+          "Tôi": 0.05,
+          "học": 0.96,
+          "nam": 0.44999999999999996,
+          "tam": 0.9,
+          "trun": 0.9,
+          "viet": 0.9,
+          "đang": 0.8,
+          "ở": 0.8
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 8,
+        "detected_errors": 8,
+        "corrected_errors": 8,
+        "missed_errors": 0,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "accuracy": 1.0,
+        "score_percentage": 100.0
+      },
+      "processing_time": 4.418134689331055,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "Nhưng sức huỷ divt của cơn bão mitch vẫn chưa thấm vào đâu lsovớithảm hoạ tại Bangladesh ăm 1970",
+        "expected_corrections": {
+          "Nhưng": "Nhưng",
+          "sức": "sức",
+          "huỷ": "hủy",
+          "divt": "diệt",
+          "của": "của",
+          "cơn": "cơn",
+          "bão": "bão",
+          "mitch": "Mitch",
+          "vẫn": "vẫn",
+          "chưa": "chưa",
+          "thấm": "thấm",
+          "vào": "vào",
+          "đâu": "đâu",
+          "lsovớithảm": "lso với thảm",
+          "hoạ": "họa",
+          "tại": "tại",
+          "Bangladesh": "Bangladesh",
+          "ăm": "năm",
+          "1970": "1970"
+        },
+        "category": "news"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "Nhưng sức hủy diệt của cơn bão Mitch vẫn chưa thấm vào đâu so với thảm họa tại Bangladesh năm 1970",
+        "error_categories": {
+          "capitalization": 1,
+          "sticky_typing": 6,
+          "tone_error": 20,
+          "typo_error": 15
+        },
+        "error_count": 42,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "diệt",
+            "position": 14,
+            "suggestions": [
+              "diệt"
+            ],
+            "word": "divt"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "họa",
+            "position": 70,
+            "suggestions": [
+              "họa"
+            ],
+            "word": "hoạ"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "năm",
+            "position": 89,
+            "suggestions": [
+              "năm"
+            ],
+            "word": "ăm"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "hủy",
+            "position": 10,
+            "suggestions": [
+              "hủy"
+            ],
+            "word": "huỷ"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "vào",
+            "position": 51,
+            "suggestions": [
+              "vào"
+            ],
+            "word": "vào"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đâu",
+            "position": 55,
+            "suggestions": [
+              "đâu"
+            ],
+            "word": "đâu"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "nhưng",
+            "position": 0,
+            "suggestions": [
+              "nhưng"
+            ],
+            "word": "Nhưng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "sức",
+            "position": 6,
+            "suggestions": [
+              "sức"
+            ],
+            "word": "sức"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "của",
+            "position": 19,
+            "suggestions": [
+              "của"
+            ],
+            "word": "của"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cơn",
+            "position": 23,
+            "suggestions": [
+              "cơn"
+            ],
+            "word": "cơn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "bão",
+            "position": 27,
+            "suggestions": [
+              "bão"
+            ],
+            "word": "bão"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "vẫn",
+            "position": 37,
+            "suggestions": [
+              "vẫn"
+            ],
+            "word": "vẫn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chưa",
+            "position": 41,
+            "suggestions": [
+              "chưa"
+            ],
+            "word": "chưa"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "thấm",
+            "position": 46,
+            "suggestions": [
+              "thấm"
+            ],
+            "word": "thấm"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tại",
+            "position": 74,
+            "suggestions": [
+              "tại"
+            ],
+            "word": "tại"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "hủy diệt",
+            "position": 10,
+            "suggestions": [
+              "hủy diệt"
+            ],
+            "word": "huỷ divt"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cơn bão",
+            "position": 23,
+            "suggestions": [
+              "cơn bão"
+            ],
+            "word": "cơn bão"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "vẫn chưa",
+            "position": 37,
+            "suggestions": [
+              "vẫn chưa"
+            ],
+            "word": "vẫn chưa"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "thấm vào",
+            "position": 46,
+            "suggestions": [
+              "thấm vào"
+            ],
+            "word": "thấm vào"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đâu so với thảm",
+            "position": 55,
+            "suggestions": [
+              "đâu so với thảm"
+            ],
+            "word": "đâu lsovớithảm"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "hủy diệt",
+            "position": 10,
+            "suggestions": [
+              "hủy diệt"
+            ],
+            "word": "huỷ divt"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "cơn bão",
+            "position": 23,
+            "suggestions": [
+              "cơn bão"
+            ],
+            "word": "cơn bão"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "vẫn chưa",
+            "position": 37,
+            "suggestions": [
+              "vẫn chưa"
+            ],
+            "word": "vẫn chưa"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "thấm vào",
+            "position": 46,
+            "suggestions": [
+              "thấm vào"
+            ],
+            "word": "thấm vào"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "đâu so với thảm",
+            "position": 55,
+            "suggestions": [
+              "đâu so với thảm"
+            ],
+            "word": "đâu lsovớithảm"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "so với thảm",
+            "position": 59,
+            "suggestions": [
+              "so với thảm"
+            ],
+            "word": "lsovớithảm"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "diệt",
+            "position": 14,
+            "suggestions": [
+              "diệt"
+            ],
+            "word": "divt"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "họa",
+            "position": 70,
+            "suggestions": [
+              "họa"
+            ],
+            "word": "hoạ"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "năm",
+            "position": 89,
+            "suggestions": [
+              "năm"
+            ],
+            "word": "ăm"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "hủy",
+            "position": 10,
+            "suggestions": [
+              "hủy"
+            ],
+            "word": "huỷ"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "vào",
+            "position": 51,
+            "suggestions": [
+              "vào"
+            ],
+            "word": "vào"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đâu",
+            "position": 55,
+            "suggestions": [
+              "đâu"
+            ],
+            "word": "đâu"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "nhưng",
+            "position": 0,
+            "suggestions": [
+              "nhưng"
+            ],
+            "word": "Nhưng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "sức",
+            "position": 6,
+            "suggestions": [
+              "sức"
+            ],
+            "word": "sức"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "của",
+            "position": 19,
+            "suggestions": [
+              "của"
+            ],
+            "word": "của"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cơn",
+            "position": 23,
+            "suggestions": [
+              "cơn"
+            ],
+            "word": "cơn"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "bão",
+            "position": 27,
+            "suggestions": [
+              "bão"
+            ],
+            "word": "bão"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "vẫn",
+            "position": 37,
+            "suggestions": [
+              "vẫn"
+            ],
+            "word": "vẫn"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chưa",
+            "position": 41,
+            "suggestions": [
+              "chưa"
+            ],
+            "word": "chưa"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "thấm",
+            "position": 46,
+            "suggestions": [
+              "thấm"
+            ],
+            "word": "thấm"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tại",
+            "position": 74,
+            "suggestions": [
+              "tại"
+            ],
+            "word": "tại"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Mitch",
+            "position": 31,
+            "suggestions": [
+              "Mitch"
+            ],
+            "word": "mitch"
+          }
+        ],
+        "original_text": "Nhưng sức huỷ divt của cơn bão mitch vẫn chưa thấm vào đâu lsovớithảm hoạ tại Bangladesh ăm 1970",
+        "processing_time_ms": 6.87,
+        "text_length": 96,
+        "timestamp": "2025-08-07T14:40:23.192330",
+        "word_probabilities": {
+          "1970": 0.3,
+          "Bangladesh": 0.3,
+          "Nhưng": 0.45,
+          "bão": 0.9,
+          "chưa": 0.9,
+          "cơn": 0.9,
+          "của": 0.9,
+          "divt": 0.9,
+          "hoạ": 0.9,
+          "huỷ": 0.9,
+          "lsovớithảm": 0.85,
+          "mitch": 0.8,
+          "sức": 0.9,
+          "thấm": 0.9,
+          "tại": 0.9,
+          "vào": 0.9,
+          "vẫn": 0.9,
+          "ăm": 0.9,
+          "đâu": 0.9
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 19,
+        "detected_errors": 19,
+        "corrected_errors": 18,
+        "missed_errors": 1,
+        "false_positives": 0,
+        "precision": 0.9473684210526315,
+        "recall": 0.9473684210526315,
+        "f1_score": 0.9473684210526315,
+        "accuracy": 0.9473684210526315,
+        "score_percentage": 94.73684210526315
+      },
+      "processing_time": 3.4661293029785156,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "Lần này anh Phươngqyết xếp hàng mua bằng được 1 chiếc",
+        "expected_corrections": {
+          "Lần": "Lần",
+          "này": "này",
+          "anh": "anh",
+          "Phươngqyết": "Phương quyết",
+          "xếp": "xếp",
+          "hàng": "hàng",
+          "mua": "mua",
+          "bằng": "bằng",
+          "được": "được",
+          "1": "1",
+          "chiếc": "chiếc"
+        },
+        "category": "personal"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "Lần này anh Phương quyết xếp hàng mua bằng được 1 chiếc",
+        "error_categories": {
+          "sticky_typing": 5,
+          "tone_error": 13,
+          "typo_error": 8
+        },
+        "error_count": 26,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "hàng",
+            "position": 27,
+            "suggestions": [
+              "hàng"
+            ],
+            "word": "hàng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "này",
+            "position": 4,
+            "suggestions": [
+              "này"
+            ],
+            "word": "này"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "anh",
+            "position": 8,
+            "suggestions": [
+              "anh"
+            ],
+            "word": "anh"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "xếp",
+            "position": 23,
+            "suggestions": [
+              "xếp"
+            ],
+            "word": "xếp"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "mua",
+            "position": 32,
+            "suggestions": [
+              "mua"
+            ],
+            "word": "mua"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "bằng",
+            "position": 36,
+            "suggestions": [
+              "bằng"
+            ],
+            "word": "bằng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "được",
+            "position": 41,
+            "suggestions": [
+              "được"
+            ],
+            "word": "được"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chiếc",
+            "position": 48,
+            "suggestions": [
+              "chiếc"
+            ],
+            "word": "chiếc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "Lần này",
+            "position": 0,
+            "suggestions": [
+              "Lần này"
+            ],
+            "word": "Lần này"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "anh Phương quyết",
+            "position": 8,
+            "suggestions": [
+              "anh Phương quyết"
+            ],
+            "word": "anh Phươngqyết"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "xếp hàng",
+            "position": 23,
+            "suggestions": [
+              "xếp hàng"
+            ],
+            "word": "xếp hàng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "mua bằng",
+            "position": 32,
+            "suggestions": [
+              "mua bằng"
+            ],
+            "word": "mua bằng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "được 1",
+            "position": 41,
+            "suggestions": [
+              "được 1"
+            ],
+            "word": "được 1"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "Lần này",
+            "position": 0,
+            "suggestions": [
+              "Lần này"
+            ],
+            "word": "Lần này"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "anh Phương quyết",
+            "position": 8,
+            "suggestions": [
+              "anh Phương quyết"
+            ],
+            "word": "anh Phươngqyết"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "xếp hàng",
+            "position": 23,
+            "suggestions": [
+              "xếp hàng"
+            ],
+            "word": "xếp hàng"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "mua bằng",
+            "position": 32,
+            "suggestions": [
+              "mua bằng"
+            ],
+            "word": "mua bằng"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "được 1",
+            "position": 41,
+            "suggestions": [
+              "được 1"
+            ],
+            "word": "được 1"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "hàng",
+            "position": 27,
+            "suggestions": [
+              "hàng"
+            ],
+            "word": "hàng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "này",
+            "position": 4,
+            "suggestions": [
+              "này"
+            ],
+            "word": "này"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "anh",
+            "position": 8,
+            "suggestions": [
+              "anh"
+            ],
+            "word": "anh"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "xếp",
+            "position": 23,
+            "suggestions": [
+              "xếp"
+            ],
+            "word": "xếp"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "mua",
+            "position": 32,
+            "suggestions": [
+              "mua"
+            ],
+            "word": "mua"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "bằng",
+            "position": 36,
+            "suggestions": [
+              "bằng"
+            ],
+            "word": "bằng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "được",
+            "position": 41,
+            "suggestions": [
+              "được"
+            ],
+            "word": "được"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chiếc",
+            "position": 48,
+            "suggestions": [
+              "chiếc"
+            ],
+            "word": "chiếc"
+          }
+        ],
+        "original_text": "Lần này anh Phươngqyết xếp hàng mua bằng được 1 chiếc",
+        "processing_time_ms": 6.69,
+        "text_length": 53,
+        "timestamp": "2025-08-07T14:40:23.200520",
+        "word_probabilities": {
+          "1": 0.3,
+          "Lần": 0.3,
+          "Phươngqyết": 0.3,
+          "anh": 0.7200000000000001,
+          "bằng": 0.9,
+          "chiếc": 0.9,
+          "mua": 0.9,
+          "này": 0.9,
+          "xếp_hàng": 0.3,
+          "được": 0.9
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 11,
+        "detected_errors": 11,
+        "corrected_errors": 10,
+        "missed_errors": 1,
+        "false_positives": 0,
+        "precision": 0.9090909090909091,
+        "recall": 0.9090909090909091,
+        "f1_score": 0.9090909090909091,
+        "accuracy": 0.9090909090909091,
+        "score_percentage": 90.9090909090909
+      },
+      "processing_time": 2.874135971069336,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "một số chuyen gia tài chính ngâSn hànG của Việt Nam cũng chung quan điểmnày",
+        "expected_corrections": {
+          "một": "một",
+          "số": "số",
+          "chuyen": "chuyên",
+          "gia": "gia",
+          "tài": "tài",
+          "chính": "chính",
+          "ngâSn": "ngân",
+          "hànG": "hàng",
+          "của": "của",
+          "Việt": "Việt",
+          "Nam": "Nam",
+          "cũng": "cũng",
+          "chung": "chung",
+          "quan": "quan",
+          "điểmnày": "điểm này"
+        },
+        "category": "finance"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "một số chuyên gia tài chính ngân hàng của Việt Nam cũng chung quan điểm này",
+        "error_categories": {
+          "capitalization": 2,
+          "compound_word": 1,
+          "sticky_typing": 13,
+          "tone_error": 19,
+          "typo_error": 14
+        },
+        "error_count": 49,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "Nam",
+            "position": 48,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "Nam"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "ngân",
+            "position": 28,
+            "suggestions": [
+              "ngân"
+            ],
+            "word": "ngâSn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "hàng",
+            "position": 34,
+            "suggestions": [
+              "hàng"
+            ],
+            "word": "hànG"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chuyên",
+            "position": 7,
+            "suggestions": [
+              "chuyên"
+            ],
+            "word": "chuyen"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "quan",
+            "position": 63,
+            "suggestions": [
+              "quan"
+            ],
+            "word": "quan"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "của",
+            "position": 39,
+            "suggestions": [
+              "của"
+            ],
+            "word": "của"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "một",
+            "position": 0,
+            "suggestions": [
+              "một"
+            ],
+            "word": "một"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "số",
+            "position": 4,
+            "suggestions": [
+              "số"
+            ],
+            "word": "số"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "gia",
+            "position": 14,
+            "suggestions": [
+              "gia"
+            ],
+            "word": "gia"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tài",
+            "position": 18,
+            "suggestions": [
+              "tài"
+            ],
+            "word": "tài"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chính",
+            "position": 22,
+            "suggestions": [
+              "chính"
+            ],
+            "word": "chính"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cũng",
+            "position": 52,
+            "suggestions": [
+              "cũng"
+            ],
+            "word": "cũng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chung",
+            "position": 57,
+            "suggestions": [
+              "chung"
+            ],
+            "word": "chung"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "Việt Nam",
+            "position": 43,
+            "suggestions": [
+              "Việt Nam"
+            ],
+            "word": "Việt Nam"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "số chuyên",
+            "position": 4,
+            "suggestions": [
+              "số chuyên"
+            ],
+            "word": "số chuyen"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "gia tài",
+            "position": 14,
+            "suggestions": [
+              "gia tài"
+            ],
+            "word": "gia tài"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chính ngân",
+            "position": 22,
+            "suggestions": [
+              "chính ngân"
+            ],
+            "word": "chính ngâSn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "hàng của",
+            "position": 34,
+            "suggestions": [
+              "hàng của"
+            ],
+            "word": "hànG của"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cũng chung",
+            "position": 52,
+            "suggestions": [
+              "cũng chung"
+            ],
+            "word": "cũng chung"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "điểm này",
+            "position": 68,
+            "suggestions": [
+              "điểm này"
+            ],
+            "word": "điểmnày"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "chung quan",
+            "position": 57,
+            "suggestions": [
+              "chung quan"
+            ],
+            "word": "chung quan"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "Nam",
+            "position": 48,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "Nam"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "số chuyên",
+            "position": 4,
+            "suggestions": [
+              "số chuyên"
+            ],
+            "word": "số chuyen"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "gia tài",
+            "position": 14,
+            "suggestions": [
+              "gia tài"
+            ],
+            "word": "gia tài"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "chính ngân",
+            "position": 22,
+            "suggestions": [
+              "chính ngân"
+            ],
+            "word": "chính ngâSn"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "hàng của",
+            "position": 34,
+            "suggestions": [
+              "hàng của"
+            ],
+            "word": "hànG của"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "Việt Nam",
+            "position": 43,
+            "suggestions": [
+              "Việt Nam"
+            ],
+            "word": "Việt Nam"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "cũng chung",
+            "position": 52,
+            "suggestions": [
+              "cũng chung"
+            ],
+            "word": "cũng chung"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "ngân",
+            "position": 28,
+            "suggestions": [
+              "ngân"
+            ],
+            "word": "ngâSn"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "chuyên gia",
+            "position": 7,
+            "suggestions": [
+              "chuyên gia"
+            ],
+            "word": "chuyen gia"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "của Việt",
+            "position": 39,
+            "suggestions": [
+              "của Việt"
+            ],
+            "word": "của Việt"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "Nam cũng",
+            "position": 48,
+            "suggestions": [
+              "Nam cũng"
+            ],
+            "word": "Nam cũng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Nam",
+            "position": 48,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "Nam"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "ngân",
+            "position": 28,
+            "suggestions": [
+              "ngân"
+            ],
+            "word": "ngâSn"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "hàng",
+            "position": 34,
+            "suggestions": [
+              "hàng"
+            ],
+            "word": "hànG"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chuyên",
+            "position": 7,
+            "suggestions": [
+              "chuyên"
+            ],
+            "word": "chuyen"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "quan",
+            "position": 63,
+            "suggestions": [
+              "quan"
+            ],
+            "word": "quan"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "của",
+            "position": 39,
+            "suggestions": [
+              "của"
+            ],
+            "word": "của"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "một",
+            "position": 0,
+            "suggestions": [
+              "một"
+            ],
+            "word": "một"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "số",
+            "position": 4,
+            "suggestions": [
+              "số"
+            ],
+            "word": "số"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "gia",
+            "position": 14,
+            "suggestions": [
+              "gia"
+            ],
+            "word": "gia"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tài",
+            "position": 18,
+            "suggestions": [
+              "tài"
+            ],
+            "word": "tài"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chính",
+            "position": 22,
+            "suggestions": [
+              "chính"
+            ],
+            "word": "chính"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cũng",
+            "position": 52,
+            "suggestions": [
+              "cũng"
+            ],
+            "word": "cũng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chung",
+            "position": 57,
+            "suggestions": [
+              "chung"
+            ],
+            "word": "chung"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Việt Nam",
+            "position": 43,
+            "suggestions": [
+              "Việt Nam"
+            ],
+            "word": "Việt Nam"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Nam",
+            "position": 48,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "Nam"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Việt",
+            "position": 43,
+            "suggestions": [
+              "Việt"
+            ],
+            "word": "Việt"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "Nam",
+            "position": 48,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "Nam"
+          }
+        ],
+        "original_text": "một số chuyen gia tài chính ngâSn hànG của Việt Nam cũng chung quan điểmnày",
+        "processing_time_ms": 6.92,
+        "text_length": 75,
+        "timestamp": "2025-08-07T14:40:23.208865",
+        "word_probabilities": {
+          "Việt_Nam": 0.3,
+          "chung": 0.9,
+          "chuyen": 0.9,
+          "cũng": 0.9,
+          "của": 0.9,
+          "gia_tài_chính": 0.3,
+          "hànG": 0.9,
+          "một_số": 0.3,
+          "ngâSn": 0.9,
+          "quan": 0.9,
+          "điểmnày": 0.85
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 15,
+        "detected_errors": 15,
+        "corrected_errors": 14,
+        "missed_errors": 1,
+        "false_positives": 0,
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1_score": 0.9333333333333333,
+        "accuracy": 0.9333333333333333,
+        "score_percentage": 93.33333333333333
+      },
+      "processing_time": 2.2170543670654297,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "Cac so liệu cho thay ngươi dân viet nam đang sống trong 1 cuôc sóng không duojc nhu mong đọi",
+        "expected_corrections": {
+          "Cac": "Các",
+          "so": "số",
+          "liệu": "liệu",
+          "cho": "cho",
+          "thay": "thấy",
+          "ngươi": "người",
+          "dân": "dân",
+          "viet": "Việt",
+          "nam": "Nam",
+          "đang": "đang",
+          "sống": "sống",
+          "trong": "trong",
+          "1": "1",
+          "cuôc": "cuộc",
+          "sóng": "sống",
+          "không": "không",
+          "duojc": "được",
+          "nhu": "như",
+          "mong": "mong",
+          "đọi": "đợi"
+        },
+        "category": "social"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "Cac so liệu cho thấy người dân Việt Nam đang sống trong 1 cuộc sống không được như mong đợi",
+        "error_categories": {
+          "capitalization": 3,
+          "compound_word": 1,
+          "sticky_typing": 6,
+          "tone_error": 19,
+          "typo_error": 17
+        },
+        "error_count": 46,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "Việt",
+            "position": 31,
+            "suggestions": [
+              "Việt"
+            ],
+            "word": "viet"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "Nam",
+            "position": 36,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "thấy",
+            "position": 16,
+            "suggestions": [
+              "thấy"
+            ],
+            "word": "thay"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "người",
+            "position": 21,
+            "suggestions": [
+              "người"
+            ],
+            "word": "ngươi"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cuộc",
+            "position": 58,
+            "suggestions": [
+              "cuộc"
+            ],
+            "word": "cuôc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "sống",
+            "position": 63,
+            "suggestions": [
+              "sống"
+            ],
+            "word": "sóng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "được",
+            "position": 74,
+            "suggestions": [
+              "được"
+            ],
+            "word": "duojc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "như",
+            "position": 80,
+            "suggestions": [
+              "như"
+            ],
+            "word": "nhu"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đợi",
+            "position": 89,
+            "suggestions": [
+              "đợi"
+            ],
+            "word": "đọi"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "liệu",
+            "position": 7,
+            "suggestions": [
+              "liệu"
+            ],
+            "word": "liệu"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "dân",
+            "position": 27,
+            "suggestions": [
+              "dân"
+            ],
+            "word": "dân"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "sống",
+            "position": 45,
+            "suggestions": [
+              "sống"
+            ],
+            "word": "sống"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "mong",
+            "position": 84,
+            "suggestions": [
+              "mong"
+            ],
+            "word": "mong"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đang",
+            "position": 40,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cho",
+            "position": 12,
+            "suggestions": [
+              "cho"
+            ],
+            "word": "cho"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "trong",
+            "position": 50,
+            "suggestions": [
+              "trong"
+            ],
+            "word": "trong"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "không",
+            "position": 68,
+            "suggestions": [
+              "không"
+            ],
+            "word": "không"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đang sống",
+            "position": 40,
+            "suggestions": [
+              "đang sống"
+            ],
+            "word": "đang sống"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "trong 1",
+            "position": 50,
+            "suggestions": [
+              "trong 1"
+            ],
+            "word": "trong 1"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "Nam",
+            "position": 36,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "đang sống",
+            "position": 40,
+            "suggestions": [
+              "đang sống"
+            ],
+            "word": "đang sống"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "trong 1",
+            "position": 50,
+            "suggestions": [
+              "trong 1"
+            ],
+            "word": "trong 1"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "liệu cho",
+            "position": 7,
+            "suggestions": [
+              "liệu cho"
+            ],
+            "word": "liệu cho"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "Nam đang",
+            "position": 36,
+            "suggestions": [
+              "Nam đang"
+            ],
+            "word": "nam đang"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "sống trong",
+            "position": 45,
+            "suggestions": [
+              "sống trong"
+            ],
+            "word": "sống trong"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Việt",
+            "position": 31,
+            "suggestions": [
+              "Việt"
+            ],
+            "word": "viet"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Nam",
+            "position": 36,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "thấy",
+            "position": 16,
+            "suggestions": [
+              "thấy"
+            ],
+            "word": "thay"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "người",
+            "position": 21,
+            "suggestions": [
+              "người"
+            ],
+            "word": "ngươi"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cuộc",
+            "position": 58,
+            "suggestions": [
+              "cuộc"
+            ],
+            "word": "cuôc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "sống",
+            "position": 63,
+            "suggestions": [
+              "sống"
+            ],
+            "word": "sóng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "được",
+            "position": 74,
+            "suggestions": [
+              "được"
+            ],
+            "word": "duojc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "như",
+            "position": 80,
+            "suggestions": [
+              "như"
+            ],
+            "word": "nhu"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đợi",
+            "position": 89,
+            "suggestions": [
+              "đợi"
+            ],
+            "word": "đọi"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "liệu",
+            "position": 7,
+            "suggestions": [
+              "liệu"
+            ],
+            "word": "liệu"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "dân",
+            "position": 27,
+            "suggestions": [
+              "dân"
+            ],
+            "word": "dân"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "sống",
+            "position": 45,
+            "suggestions": [
+              "sống"
+            ],
+            "word": "sống"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "mong",
+            "position": 84,
+            "suggestions": [
+              "mong"
+            ],
+            "word": "mong"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đang",
+            "position": 40,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cho",
+            "position": 12,
+            "suggestions": [
+              "cho"
+            ],
+            "word": "cho"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "trong",
+            "position": 50,
+            "suggestions": [
+              "trong"
+            ],
+            "word": "trong"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "không",
+            "position": 68,
+            "suggestions": [
+              "không"
+            ],
+            "word": "không"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Việt Nam",
+            "position": 31,
+            "suggestions": [
+              "Việt Nam"
+            ],
+            "word": "viet nam"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Nam",
+            "position": 36,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "đang",
+            "position": 40,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "Nam",
+            "position": 36,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          }
+        ],
+        "original_text": "Cac so liệu cho thay ngươi dân viet nam đang sống trong 1 cuôc sóng không duojc nhu mong đọi",
+        "processing_time_ms": 6.99,
+        "text_length": 92,
+        "timestamp": "2025-08-07T14:40:23.217405",
+        "word_probabilities": {
+          "1": 0.3,
+          "Cac": 0.3,
+          "cho": 0.9,
+          "cuôc": 0.9,
+          "duojc": 0.9,
+          "dân": 0.9,
+          "không": 0.9,
+          "liệu": 0.9,
+          "mong": 0.9,
+          "nam": 0.375,
+          "ngươi": 0.9,
+          "nhu": 0.9,
+          "so": 0.3,
+          "sóng": 0.9,
+          "sống": 0.9,
+          "thay": 0.9,
+          "trong": 0.9,
+          "viet": 0.9,
+          "đang": 0.8,
+          "đọi": 0.9
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 20,
+        "detected_errors": 20,
+        "corrected_errors": 18,
+        "missed_errors": 2,
+        "false_positives": 0,
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1_score": 0.9,
+        "accuracy": 0.9,
+        "score_percentage": 90.0
+      },
+      "processing_time": 2.146005630493164,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "Nefn kinh té thé giới đang đúng trươc nguyen co của mọt cuoc suy thoai",
+        "expected_corrections": {
+          "Nefn": "Nền",
+          "kinh": "kinh",
+          "té": "tế",
+          "thé": "thế",
+          "giới": "giới",
+          "đang": "đang",
+          "đúng": "đứng",
+          "trươc": "trước",
+          "nguyen": "nguy",
+          "co": "cơ",
+          "của": "của",
+          "mọt": "một",
+          "cuoc": "cuộc",
+          "suy": "suy",
+          "thoai": "thoái"
+        },
+        "category": "economics"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "Nefn kinh tế thế giới đang đứng trước nguy cơ của một cuộc suy thoái",
+        "error_categories": {
+          "capitalization": 2,
+          "sticky_typing": 4,
+          "tone_error": 14,
+          "typo_error": 14
+        },
+        "error_count": 34,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "tế",
+            "position": 10,
+            "suggestions": [
+              "tế"
+            ],
+            "word": "té"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "thế",
+            "position": 13,
+            "suggestions": [
+              "thế"
+            ],
+            "word": "thé"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đứng",
+            "position": 27,
+            "suggestions": [
+              "đứng"
+            ],
+            "word": "đúng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "trước",
+            "position": 32,
+            "suggestions": [
+              "trước"
+            ],
+            "word": "trươc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "nguy",
+            "position": 38,
+            "suggestions": [
+              "nguy"
+            ],
+            "word": "nguyen"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cơ",
+            "position": 45,
+            "suggestions": [
+              "cơ"
+            ],
+            "word": "co"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "một",
+            "position": 52,
+            "suggestions": [
+              "một"
+            ],
+            "word": "mọt"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cuộc",
+            "position": 56,
+            "suggestions": [
+              "cuộc"
+            ],
+            "word": "cuoc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "thoái",
+            "position": 65,
+            "suggestions": [
+              "thoái"
+            ],
+            "word": "thoai"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "giới",
+            "position": 17,
+            "suggestions": [
+              "giới"
+            ],
+            "word": "giới"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "suy",
+            "position": 61,
+            "suggestions": [
+              "suy"
+            ],
+            "word": "suy"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đang",
+            "position": 22,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "của",
+            "position": 48,
+            "suggestions": [
+              "của"
+            ],
+            "word": "của"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "kinh",
+            "position": 5,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kinh"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "đứng trước",
+            "position": 27,
+            "suggestions": [
+              "đứng trước"
+            ],
+            "word": "đúng trươc"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "nguy cơ",
+            "position": 38,
+            "suggestions": [
+              "nguy cơ"
+            ],
+            "word": "nguyen co"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "cuộc suy",
+            "position": 56,
+            "suggestions": [
+              "cuộc suy"
+            ],
+            "word": "cuoc suy"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "giới đang",
+            "position": 17,
+            "suggestions": [
+              "giới đang"
+            ],
+            "word": "giới đang"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tế",
+            "position": 10,
+            "suggestions": [
+              "tế"
+            ],
+            "word": "té"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "thế",
+            "position": 13,
+            "suggestions": [
+              "thế"
+            ],
+            "word": "thé"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đứng",
+            "position": 27,
+            "suggestions": [
+              "đứng"
+            ],
+            "word": "đúng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "trước",
+            "position": 32,
+            "suggestions": [
+              "trước"
+            ],
+            "word": "trươc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "nguy",
+            "position": 38,
+            "suggestions": [
+              "nguy"
+            ],
+            "word": "nguyen"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cơ",
+            "position": 45,
+            "suggestions": [
+              "cơ"
+            ],
+            "word": "co"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "một",
+            "position": 52,
+            "suggestions": [
+              "một"
+            ],
+            "word": "mọt"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cuộc",
+            "position": 56,
+            "suggestions": [
+              "cuộc"
+            ],
+            "word": "cuoc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "thoái",
+            "position": 65,
+            "suggestions": [
+              "thoái"
+            ],
+            "word": "thoai"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "giới",
+            "position": 17,
+            "suggestions": [
+              "giới"
+            ],
+            "word": "giới"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "suy",
+            "position": 61,
+            "suggestions": [
+              "suy"
+            ],
+            "word": "suy"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đang",
+            "position": 22,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "của",
+            "position": 48,
+            "suggestions": [
+              "của"
+            ],
+            "word": "của"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "kinh",
+            "position": 5,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kinh"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "kinh",
+            "position": 5,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kinh"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "đang",
+            "position": 22,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          }
+        ],
+        "original_text": "Nefn kinh té thé giới đang đúng trươc nguyen co của mọt cuoc suy thoai",
+        "processing_time_ms": 6.38,
+        "text_length": 70,
+        "timestamp": "2025-08-07T14:40:23.225177",
+        "word_probabilities": {
+          "Nefn": 0.3,
+          "co": 0.9,
+          "cuoc": 0.9,
+          "của": 0.9,
+          "giới": 0.9,
+          "kinh": 0.8,
+          "mọt": 0.9,
+          "nguyen": 0.9,
+          "suy": 0.9,
+          "thoai": 0.9,
+          "thé": 0.9,
+          "trươc": 0.9,
+          "té": 0.9,
+          "đang": 0.8,
+          "đúng": 0.9
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 15,
+        "detected_errors": 15,
+        "corrected_errors": 14,
+        "missed_errors": 1,
+        "false_positives": 0,
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1_score": 0.9333333333333333,
+        "accuracy": 0.9333333333333333,
+        "score_percentage": 93.33333333333333
+      },
+      "processing_time": 2.1839141845703125,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "Khong phai tất ca nhưng gi chung ta thấy dideu là sụ that",
+        "expected_corrections": {
+          "Khong": "Không",
+          "phai": "phải",
+          "tất": "tất",
+          "ca": "cả",
+          "nhưng": "nhưng",
+          "gi": "gì",
+          "chung": "chúng",
+          "ta": "ta",
+          "thấy": "thấy",
+          "dideu": "điều",
+          "là": "là",
+          "sụ": "sự",
+          "that": "thật"
+        },
+        "category": "general"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "Không phải tất cả nhưng gì chúng ta thấy điều là sự thật",
+        "error_categories": {
+          "sticky_typing": 4,
+          "tone_error": 12,
+          "typo_error": 12
+        },
+        "error_count": 28,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "Không",
+            "position": 0,
+            "suggestions": [
+              "Không"
+            ],
+            "word": "Khong"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "phải",
+            "position": 6,
+            "suggestions": [
+              "phải"
+            ],
+            "word": "phai"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cả",
+            "position": 15,
+            "suggestions": [
+              "cả"
+            ],
+            "word": "ca"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "gì",
+            "position": 24,
+            "suggestions": [
+              "gì"
+            ],
+            "word": "gi"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "điều",
+            "position": 41,
+            "suggestions": [
+              "điều"
+            ],
+            "word": "dideu"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "sự",
+            "position": 50,
+            "suggestions": [
+              "sự"
+            ],
+            "word": "sụ"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "thật",
+            "position": 53,
+            "suggestions": [
+              "thật"
+            ],
+            "word": "that"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tất",
+            "position": 11,
+            "suggestions": [
+              "tất"
+            ],
+            "word": "tất"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "nhưng",
+            "position": 18,
+            "suggestions": [
+              "nhưng"
+            ],
+            "word": "nhưng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "ta",
+            "position": 33,
+            "suggestions": [
+              "ta"
+            ],
+            "word": "ta"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chung",
+            "position": 27,
+            "suggestions": [
+              "chung"
+            ],
+            "word": "chung"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "thấy",
+            "position": 36,
+            "suggestions": [
+              "thấy"
+            ],
+            "word": "thấy"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "tất cả",
+            "position": 11,
+            "suggestions": [
+              "tất cả"
+            ],
+            "word": "tất ca"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "nhưng gì",
+            "position": 18,
+            "suggestions": [
+              "nhưng gì"
+            ],
+            "word": "nhưng gi"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "chúng ta",
+            "position": 27,
+            "suggestions": [
+              "chúng ta"
+            ],
+            "word": "chung ta"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "ta thấy",
+            "position": 33,
+            "suggestions": [
+              "ta thấy"
+            ],
+            "word": "ta thấy"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Không",
+            "position": 0,
+            "suggestions": [
+              "Không"
+            ],
+            "word": "Khong"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "phải",
+            "position": 6,
+            "suggestions": [
+              "phải"
+            ],
+            "word": "phai"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cả",
+            "position": 15,
+            "suggestions": [
+              "cả"
+            ],
+            "word": "ca"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "gì",
+            "position": 24,
+            "suggestions": [
+              "gì"
+            ],
+            "word": "gi"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "điều",
+            "position": 41,
+            "suggestions": [
+              "điều"
+            ],
+            "word": "dideu"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "sự",
+            "position": 50,
+            "suggestions": [
+              "sự"
+            ],
+            "word": "sụ"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "thật",
+            "position": 53,
+            "suggestions": [
+              "thật"
+            ],
+            "word": "that"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tất",
+            "position": 11,
+            "suggestions": [
+              "tất"
+            ],
+            "word": "tất"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "nhưng",
+            "position": 18,
+            "suggestions": [
+              "nhưng"
+            ],
+            "word": "nhưng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "ta",
+            "position": 33,
+            "suggestions": [
+              "ta"
+            ],
+            "word": "ta"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chung",
+            "position": 27,
+            "suggestions": [
+              "chung"
+            ],
+            "word": "chung"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "thấy",
+            "position": 36,
+            "suggestions": [
+              "thấy"
+            ],
+            "word": "thấy"
+          }
+        ],
+        "original_text": "Khong phai tất ca nhưng gi chung ta thấy dideu là sụ that",
+        "processing_time_ms": 7.23,
+        "text_length": 57,
+        "timestamp": "2025-08-07T14:40:23.233772",
+        "word_probabilities": {
+          "Khong_phai": 0.3,
+          "ca": 0.9,
+          "chung": 0.9,
+          "dideu": 0.9,
+          "gi": 0.9,
+          "là": 0.05,
+          "nhưng": 0.9,
+          "sụ": 0.9,
+          "ta": 0.9,
+          "that": 0.9,
+          "thấy": 0.9,
+          "tất": 0.9
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 13,
+        "detected_errors": 13,
+        "corrected_errors": 13,
+        "missed_errors": 0,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "accuracy": 1.0,
+        "score_percentage": 100.0
+      },
+      "processing_time": 2.557992935180664,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "chinh phủ luôn cố găng het suc để naggna cao chat luong nền giáo duc =cua nuoc nhà",
+        "expected_corrections": {
+          "chinh": "chính",
+          "phủ": "phủ",
+          "luôn": "luôn",
+          "cố": "cố",
+          "găng": "gắng",
+          "het": "hết",
+          "suc": "sức",
+          "để": "để",
+          "naggna": "nâng",
+          "cao": "cao",
+          "chat": "chất",
+          "luong": "lượng",
+          "nền": "nền",
+          "giáo": "giáo",
+          "duc": "dục",
+          "=cua": "của",
+          "nuoc": "nước",
+          "nhà": "nhà"
+        },
+        "category": "education"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "chính phủ luôn cố gắng hết sức để nâng cao chất lượng nền giáo dục =của nước nhà",
+        "error_categories": {
+          "compound_word": 1,
+          "spacing_punctuation": 1,
+          "sticky_typing": 8,
+          "tone_error": 18,
+          "typo_error": 18
+        },
+        "error_count": 46,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "chính",
+            "position": 0,
+            "suggestions": [
+              "chính"
+            ],
+            "word": "chinh"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "gắng",
+            "position": 18,
+            "suggestions": [
+              "gắng"
+            ],
+            "word": "găng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "hết",
+            "position": 23,
+            "suggestions": [
+              "hết"
+            ],
+            "word": "het"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "sức",
+            "position": 27,
+            "suggestions": [
+              "sức"
+            ],
+            "word": "suc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "nâng",
+            "position": 34,
+            "suggestions": [
+              "nâng"
+            ],
+            "word": "naggna"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chất",
+            "position": 45,
+            "suggestions": [
+              "chất"
+            ],
+            "word": "chat"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "lượng",
+            "position": 50,
+            "suggestions": [
+              "lượng"
+            ],
+            "word": "luong"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "dục",
+            "position": 65,
+            "suggestions": [
+              "dục"
+            ],
+            "word": "duc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "nước",
+            "position": 74,
+            "suggestions": [
+              "nước"
+            ],
+            "word": "nuoc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "phủ",
+            "position": 6,
+            "suggestions": [
+              "phủ"
+            ],
+            "word": "phủ"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "luôn",
+            "position": 10,
+            "suggestions": [
+              "luôn"
+            ],
+            "word": "luôn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cố",
+            "position": 15,
+            "suggestions": [
+              "cố"
+            ],
+            "word": "cố"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "để",
+            "position": 31,
+            "suggestions": [
+              "để"
+            ],
+            "word": "để"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cao",
+            "position": 41,
+            "suggestions": [
+              "cao"
+            ],
+            "word": "cao"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "nền",
+            "position": 56,
+            "suggestions": [
+              "nền"
+            ],
+            "word": "nền"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "giáo",
+            "position": 60,
+            "suggestions": [
+              "giáo"
+            ],
+            "word": "giáo"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "nhà",
+            "position": 79,
+            "suggestions": [
+              "nhà"
+            ],
+            "word": "nhà"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "phủ luôn",
+            "position": 6,
+            "suggestions": [
+              "phủ luôn"
+            ],
+            "word": "phủ luôn"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "hết sức",
+            "position": 23,
+            "suggestions": [
+              "hết sức"
+            ],
+            "word": "het suc"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "nâng cao",
+            "position": 34,
+            "suggestions": [
+              "nâng cao"
+            ],
+            "word": "naggna cao"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "chất lượng",
+            "position": 45,
+            "suggestions": [
+              "chất lượng"
+            ],
+            "word": "chat luong"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "giáo dục",
+            "position": 60,
+            "suggestions": [
+              "giáo dục"
+            ],
+            "word": "giáo duc"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "của nước",
+            "position": 70,
+            "suggestions": [
+              "của nước"
+            ],
+            "word": "cua nuoc"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "nền giáo",
+            "position": 56,
+            "suggestions": [
+              "nền giáo"
+            ],
+            "word": "nền giáo"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "phủ luôn",
+            "position": 6,
+            "suggestions": [
+              "phủ luôn"
+            ],
+            "word": "phủ luôn"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "luôn cố",
+            "position": 10,
+            "suggestions": [
+              "luôn cố"
+            ],
+            "word": "luôn cố"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chính",
+            "position": 0,
+            "suggestions": [
+              "chính"
+            ],
+            "word": "chinh"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "gắng",
+            "position": 18,
+            "suggestions": [
+              "gắng"
+            ],
+            "word": "găng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "hết",
+            "position": 23,
+            "suggestions": [
+              "hết"
+            ],
+            "word": "het"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "sức",
+            "position": 27,
+            "suggestions": [
+              "sức"
+            ],
+            "word": "suc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "nâng",
+            "position": 34,
+            "suggestions": [
+              "nâng"
+            ],
+            "word": "naggna"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chất",
+            "position": 45,
+            "suggestions": [
+              "chất"
+            ],
+            "word": "chat"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "lượng",
+            "position": 50,
+            "suggestions": [
+              "lượng"
+            ],
+            "word": "luong"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "dục",
+            "position": 65,
+            "suggestions": [
+              "dục"
+            ],
+            "word": "duc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "nước",
+            "position": 74,
+            "suggestions": [
+              "nước"
+            ],
+            "word": "nuoc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "phủ",
+            "position": 6,
+            "suggestions": [
+              "phủ"
+            ],
+            "word": "phủ"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "luôn",
+            "position": 10,
+            "suggestions": [
+              "luôn"
+            ],
+            "word": "luôn"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cố",
+            "position": 15,
+            "suggestions": [
+              "cố"
+            ],
+            "word": "cố"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "để",
+            "position": 31,
+            "suggestions": [
+              "để"
+            ],
+            "word": "để"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cao",
+            "position": 41,
+            "suggestions": [
+              "cao"
+            ],
+            "word": "cao"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "nền",
+            "position": 56,
+            "suggestions": [
+              "nền"
+            ],
+            "word": "nền"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "giáo",
+            "position": 60,
+            "suggestions": [
+              "giáo"
+            ],
+            "word": "giáo"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "nhà",
+            "position": 79,
+            "suggestions": [
+              "nhà"
+            ],
+            "word": "nhà"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "phủ luôn",
+            "position": 6,
+            "suggestions": [
+              "phủ luôn"
+            ],
+            "word": "phủ luôn"
+          },
+          {
+            "category": "spacing_punctuation",
+            "corrected": "duc cua",
+            "position": 65,
+            "suggestions": [
+              "\\1 \\2"
+            ],
+            "word": "duc =cua"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "giáo dục",
+            "position": 60,
+            "suggestions": [
+              "giáo dục"
+            ],
+            "word": "giáo duc"
+          }
+        ],
+        "original_text": "chinh phủ luôn cố găng het suc để naggna cao chat luong nền giáo duc =cua nuoc nhà",
+        "processing_time_ms": 6.88,
+        "text_length": 82,
+        "timestamp": "2025-08-07T14:40:23.242086",
+        "word_probabilities": {
+          "=": 0.3,
+          "cao": 0.9,
+          "chat": 0.9,
+          "chinh": 0.9,
+          "cua": 0.3,
+          "cố": 0.9,
+          "duc": 0.9,
+          "giáo": 0.9,
+          "găng": 0.9,
+          "het": 0.9,
+          "luong": 0.9,
+          "luôn": 0.9,
+          "naggna": 0.9,
+          "nhà": 0.9,
+          "nuoc": 0.9,
+          "nền": 0.9,
+          "phủ": 0.9,
+          "suc": 0.9,
+          "để": 0.9
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 18,
+        "detected_errors": 17,
+        "corrected_errors": 17,
+        "missed_errors": 0,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.9444444444444444,
+        "f1_score": 0.9714285714285714,
+        "accuracy": 0.9444444444444444,
+        "score_percentage": 94.44444444444444
+      },
+      "processing_time": 1.847982406616211,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "nèn kinh te thé giới đang đứng trươc nguy co của mọt cuoc suy thoai",
+        "expected_corrections": {
+          "nèn": "nền",
+          "kinh": "kinh",
+          "te": "tế",
+          "thé": "thế",
+          "giới": "giới",
+          "đang": "đang",
+          "đứng": "đứng",
+          "trươc": "trước",
+          "nguy": "nguy",
+          "co": "cơ",
+          "của": "của",
+          "mọt": "một",
+          "cuoc": "cuộc",
+          "suy": "suy",
+          "thoai": "thoái"
+        },
+        "category": "economics"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "nền kinh tế thế giới đang đứng trước nguy cơ của một cuộc suy thoái",
+        "error_categories": {
+          "capitalization": 2,
+          "sticky_typing": 3,
+          "tone_error": 16,
+          "typo_error": 16
+        },
+        "error_count": 37,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "thế",
+            "position": 12,
+            "suggestions": [
+              "thế"
+            ],
+            "word": "thé"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "trước",
+            "position": 31,
+            "suggestions": [
+              "trước"
+            ],
+            "word": "trươc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cơ",
+            "position": 42,
+            "suggestions": [
+              "cơ"
+            ],
+            "word": "co"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "một",
+            "position": 49,
+            "suggestions": [
+              "một"
+            ],
+            "word": "mọt"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "cuộc",
+            "position": 53,
+            "suggestions": [
+              "cuộc"
+            ],
+            "word": "cuoc"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "thoái",
+            "position": 62,
+            "suggestions": [
+              "thoái"
+            ],
+            "word": "thoai"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "nền",
+            "position": 0,
+            "suggestions": [
+              "nền"
+            ],
+            "word": "nèn"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "giới",
+            "position": 16,
+            "suggestions": [
+              "giới"
+            ],
+            "word": "giới"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đứng",
+            "position": 26,
+            "suggestions": [
+              "đứng"
+            ],
+            "word": "đứng"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "nguy",
+            "position": 37,
+            "suggestions": [
+              "nguy"
+            ],
+            "word": "nguy"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "suy",
+            "position": 58,
+            "suggestions": [
+              "suy"
+            ],
+            "word": "suy"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tế",
+            "position": 9,
+            "suggestions": [
+              "tế"
+            ],
+            "word": "te"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đang",
+            "position": 21,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "của",
+            "position": 45,
+            "suggestions": [
+              "của"
+            ],
+            "word": "của"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "kinh",
+            "position": 4,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kinh"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đang đứng",
+            "position": 21,
+            "suggestions": [
+              "đang đứng"
+            ],
+            "word": "đang đứng"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "cuộc suy",
+            "position": 53,
+            "suggestions": [
+              "cuộc suy"
+            ],
+            "word": "cuoc suy"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "đang đứng",
+            "position": 21,
+            "suggestions": [
+              "đang đứng"
+            ],
+            "word": "đang đứng"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "giới đang",
+            "position": 16,
+            "suggestions": [
+              "giới đang"
+            ],
+            "word": "giới đang"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "thế",
+            "position": 12,
+            "suggestions": [
+              "thế"
+            ],
+            "word": "thé"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "trước",
+            "position": 31,
+            "suggestions": [
+              "trước"
+            ],
+            "word": "trươc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cơ",
+            "position": 42,
+            "suggestions": [
+              "cơ"
+            ],
+            "word": "co"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "một",
+            "position": 49,
+            "suggestions": [
+              "một"
+            ],
+            "word": "mọt"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "cuộc",
+            "position": 53,
+            "suggestions": [
+              "cuộc"
+            ],
+            "word": "cuoc"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "thoái",
+            "position": 62,
+            "suggestions": [
+              "thoái"
+            ],
+            "word": "thoai"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "nền",
+            "position": 0,
+            "suggestions": [
+              "nền"
+            ],
+            "word": "nèn"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "giới",
+            "position": 16,
+            "suggestions": [
+              "giới"
+            ],
+            "word": "giới"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đứng",
+            "position": 26,
+            "suggestions": [
+              "đứng"
+            ],
+            "word": "đứng"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "nguy",
+            "position": 37,
+            "suggestions": [
+              "nguy"
+            ],
+            "word": "nguy"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "suy",
+            "position": 58,
+            "suggestions": [
+              "suy"
+            ],
+            "word": "suy"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tế",
+            "position": 9,
+            "suggestions": [
+              "tế"
+            ],
+            "word": "te"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đang",
+            "position": 21,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "của",
+            "position": 45,
+            "suggestions": [
+              "của"
+            ],
+            "word": "của"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "kinh",
+            "position": 4,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kinh"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đang đứng",
+            "position": 21,
+            "suggestions": [
+              "đang đứng"
+            ],
+            "word": "đang đứng"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "kinh",
+            "position": 4,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kinh"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "đang",
+            "position": 21,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "đang"
+          }
+        ],
+        "original_text": "nèn kinh te thé giới đang đứng trươc nguy co của mọt cuoc suy thoai",
+        "processing_time_ms": 6.8,
+        "text_length": 67,
+        "timestamp": "2025-08-07T14:40:23.250747",
+        "word_probabilities": {
+          "co": 0.9,
+          "cuoc": 0.9,
+          "của": 0.9,
+          "giới": 0.9,
+          "kinh": 0.8,
+          "mọt": 0.9,
+          "nguy": 0.9,
+          "nèn": 0.9,
+          "suy": 0.9,
+          "te": 0.9,
+          "thoai": 0.9,
+          "thé": 0.9,
+          "trươc": 0.9,
+          "đang": 0.8,
+          "đứng": 0.9
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 15,
+        "detected_errors": 15,
+        "corrected_errors": 15,
+        "missed_errors": 0,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "accuracy": 1.0,
+        "score_percentage": 100.0
+      },
+      "processing_time": 1.6369819641113281,
+      "success": true
+    },
+    {
+      "test_case": {
+        "original": "kinh tế viet nam dang dứng truoc 1 thoi ky đổi mơi chưa tung có tienf lệ trong lịch sử",
+        "expected_corrections": {
+          "kinh": "kinh",
+          "tế": "tế",
+          "viet": "Việt",
+          "nam": "Nam",
+          "dang": "đang",
+          "dứng": "đứng",
+          "truoc": "trước",
+          "1": "1",
+          "thoi": "thời",
+          "ky": "kỳ",
+          "đổi": "đổi",
+          "mơi": "mới",
+          "chưa": "chưa",
+          "tung": "từng",
+          "có": "có",
+          "tienf": "tiền",
+          "lệ": "lệ",
+          "trong": "trong",
+          "lịch": "lịch",
+          "sử": "sử"
+        },
+        "category": "history"
+      },
+      "response": {
+        "cached": false,
+        "confidence": 0.0,
+        "corrected_text": "kinh tế Việt Nam đang dứng truoc 1 thời kỳ đổi mới chưa từng có tiền lệ trong lịch sử",
+        "error_categories": {
+          "capitalization": 3,
+          "compound_word": 1,
+          "sticky_typing": 7,
+          "tone_error": 19,
+          "typo_error": 19
+        },
+        "error_count": 49,
+        "errors": [
+          {
+            "category": "tone_error",
+            "corrected": "Việt",
+            "position": 8,
+            "suggestions": [
+              "Việt"
+            ],
+            "word": "viet"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "Nam",
+            "position": 13,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "thời",
+            "position": 35,
+            "suggestions": [
+              "thời"
+            ],
+            "word": "thoi"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "kỳ",
+            "position": 40,
+            "suggestions": [
+              "kỳ"
+            ],
+            "word": "ky"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "mới",
+            "position": 47,
+            "suggestions": [
+              "mới"
+            ],
+            "word": "mơi"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "từng",
+            "position": 56,
+            "suggestions": [
+              "từng"
+            ],
+            "word": "tung"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tiền",
+            "position": 64,
+            "suggestions": [
+              "tiền"
+            ],
+            "word": "tienf"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "lệ",
+            "position": 70,
+            "suggestions": [
+              "lệ"
+            ],
+            "word": "lệ"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "sử",
+            "position": 84,
+            "suggestions": [
+              "sử"
+            ],
+            "word": "sử"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đổi",
+            "position": 43,
+            "suggestions": [
+              "đổi"
+            ],
+            "word": "đổi"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "có",
+            "position": 61,
+            "suggestions": [
+              "có"
+            ],
+            "word": "có"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "lịch",
+            "position": 79,
+            "suggestions": [
+              "lịch"
+            ],
+            "word": "lịch"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "đang",
+            "position": 17,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "dang"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "chưa",
+            "position": 51,
+            "suggestions": [
+              "chưa"
+            ],
+            "word": "chưa"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "trong",
+            "position": 73,
+            "suggestions": [
+              "trong"
+            ],
+            "word": "trong"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "kinh",
+            "position": 0,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kinh"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "tế",
+            "position": 5,
+            "suggestions": [
+              "tế"
+            ],
+            "word": "tế"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "lệ trong",
+            "position": 70,
+            "suggestions": [
+              "lệ trong"
+            ],
+            "word": "lệ trong"
+          },
+          {
+            "category": "tone_error",
+            "corrected": "lịch sử",
+            "position": 79,
+            "suggestions": [
+              "lịch sử"
+            ],
+            "word": "lịch sử"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "thời kỳ",
+            "position": 35,
+            "suggestions": [
+              "thời kỳ"
+            ],
+            "word": "thoi ky"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "đổi mới",
+            "position": 43,
+            "suggestions": [
+              "đổi mới"
+            ],
+            "word": "đổi mơi"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "từng có",
+            "position": 56,
+            "suggestions": [
+              "từng có"
+            ],
+            "word": "tung có"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "tiền lệ",
+            "position": 64,
+            "suggestions": [
+              "tiền lệ"
+            ],
+            "word": "tienf lệ"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "lịch sử",
+            "position": 79,
+            "suggestions": [
+              "lịch sử"
+            ],
+            "word": "lịch sử"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "Nam",
+            "position": 13,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "sticky_typing",
+            "corrected": "lệ trong",
+            "position": 70,
+            "suggestions": [
+              "lệ trong"
+            ],
+            "word": "lệ trong"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Việt",
+            "position": 8,
+            "suggestions": [
+              "Việt"
+            ],
+            "word": "viet"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "Nam",
+            "position": 13,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "thời",
+            "position": 35,
+            "suggestions": [
+              "thời"
+            ],
+            "word": "thoi"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "kỳ",
+            "position": 40,
+            "suggestions": [
+              "kỳ"
+            ],
+            "word": "ky"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "mới",
+            "position": 47,
+            "suggestions": [
+              "mới"
+            ],
+            "word": "mơi"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "từng",
+            "position": 56,
+            "suggestions": [
+              "từng"
+            ],
+            "word": "tung"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tiền",
+            "position": 64,
+            "suggestions": [
+              "tiền"
+            ],
+            "word": "tienf"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "lệ",
+            "position": 70,
+            "suggestions": [
+              "lệ"
+            ],
+            "word": "lệ"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "sử",
+            "position": 84,
+            "suggestions": [
+              "sử"
+            ],
+            "word": "sử"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đổi",
+            "position": 43,
+            "suggestions": [
+              "đổi"
+            ],
+            "word": "đổi"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "có",
+            "position": 61,
+            "suggestions": [
+              "có"
+            ],
+            "word": "có"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "lịch",
+            "position": 79,
+            "suggestions": [
+              "lịch"
+            ],
+            "word": "lịch"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "đang",
+            "position": 17,
+            "suggestions": [
+              "đang"
+            ],
+            "word": "dang"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "chưa",
+            "position": 51,
+            "suggestions": [
+              "chưa"
+            ],
+            "word": "chưa"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "trong",
+            "position": 73,
+            "suggestions": [
+              "trong"
+            ],
+            "word": "trong"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "kinh",
+            "position": 0,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kinh"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "tế",
+            "position": 5,
+            "suggestions": [
+              "tế"
+            ],
+            "word": "tế"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "lệ trong",
+            "position": 70,
+            "suggestions": [
+              "lệ trong"
+            ],
+            "word": "lệ trong"
+          },
+          {
+            "category": "typo_error",
+            "corrected": "lịch sử",
+            "position": 79,
+            "suggestions": [
+              "lịch sử"
+            ],
+            "word": "lịch sử"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Việt Nam",
+            "position": 8,
+            "suggestions": [
+              "Việt Nam"
+            ],
+            "word": "viet nam"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "kinh",
+            "position": 0,
+            "suggestions": [
+              "kinh"
+            ],
+            "word": "kinh"
+          },
+          {
+            "category": "capitalization",
+            "corrected": "Nam",
+            "position": 13,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          },
+          {
+            "category": "compound_word",
+            "corrected": "Nam",
+            "position": 13,
+            "suggestions": [
+              "Nam"
+            ],
+            "word": "nam"
+          }
+        ],
+        "original_text": "kinh tế viet nam dang dứng truoc 1 thoi ky đổi mơi chưa tung có tienf lệ trong lịch sử",
+        "processing_time_ms": 6.94,
+        "text_length": 86,
+        "timestamp": "2025-08-07T14:40:23.259116",
+        "word_probabilities": {
+          "1": 0.3,
+          "chưa": 0.9,
+          "có": 0.9,
+          "dang": 0.9,
+          "dứng": 0.3,
+          "kinh_tế": 0.3,
+          "ky": 0.9,
+          "lệ": 0.9,
+          "lịch_sử": 0.3,
+          "mơi": 0.9,
+          "nam": 0.375,
+          "thoi": 0.9,
+          "tienf": 0.9,
+          "trong": 0.9,
+          "truoc": 0.3,
+          "tung": 0.9,
+          "viet": 0.9,
+          "đổi": 0.9
+        }
+      },
+      "evaluation": {
+        "total_expected_errors": 20,
+        "detected_errors": 20,
+        "corrected_errors": 18,
+        "missed_errors": 2,
+        "false_positives": 0,
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1_score": 0.9,
+        "accuracy": 0.9,
+        "score_percentage": 90.0
+      },
+      "processing_time": 1.695871353149414,
+      "success": true
+    }
+  ],
+  "performance_stats": {
+    "average_processing_time": 3.6070942878723145,
+    "total_processing_time": 43.28513145446777
+  }
+}
