@@ -17,6 +17,7 @@ class SpellCheckerApp {
         this.checkBtn = document.getElementById('check-btn');
         this.clearBtn = document.getElementById('clear-btn');
         this.copyBtn = document.getElementById('copy-btn');
+        this.autoEvaluateBtn = document.getElementById('auto-evaluate-btn');
         this.resultsSection = document.getElementById('results-section');
         this.loading = document.getElementById('loading');
         this.errorMessage = document.getElementById('error-message');
@@ -37,6 +38,7 @@ class SpellCheckerApp {
         this.checkBtn.addEventListener('click', () => this.checkSpelling());
         this.clearBtn.addEventListener('click', () => this.clearText());
         this.copyBtn.addEventListener('click', () => this.copyResults());
+        this.autoEvaluateBtn.addEventListener('click', () => this.autoEvaluate());
         
         // Auto-check on Enter
         this.textInput.addEventListener('keydown', (e) => {
@@ -382,6 +384,125 @@ class SpellCheckerApp {
 
     displayCorrectedText(text) {
         this.correctedText.textContent = text;
+    }
+
+    async autoEvaluate() {
+        this.showLoading();
+        this.hideError();
+        this.hideResults();
+
+        try {
+            const response = await fetch('/api/auto_evaluate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+
+            const result = await response.json();
+            this.hideLoading();
+
+            if (response.ok && result.success) {
+                this.displayEvaluationResults(result.results);
+            } else {
+                this.showError(result.error || 'Có lỗi xảy ra khi chạy đánh giá tự động');
+            }
+
+        } catch (error) {
+            this.hideLoading();
+            this.showError('Không thể kết nối đến server');
+            console.error('Error:', error);
+        }
+    }
+
+    displayEvaluationResults(results) {
+        // Tạo HTML cho kết quả đánh giá
+        const evaluationHTML = `
+            <div class="evaluation-results">
+                <h3><i class="fas fa-chart-line"></i> Kết quả đánh giá tự động</h3>
+                
+                <div class="evaluation-summary">
+                    <div class="summary-item">
+                        <span class="summary-label">Tổng số test:</span>
+                        <span class="summary-value">${results.total_tests}</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Test thành công:</span>
+                        <span class="summary-value">${results.successful_tests}</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Điểm trung bình:</span>
+                        <span class="summary-value score-${this.getScoreClass(results.average_score)}">${results.average_score.toFixed(1)}%</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Thời gian xử lý TB:</span>
+                        <span class="summary-value">${results.performance_stats.average_processing_time.toFixed(2)}ms</span>
+                    </div>
+                </div>
+
+                <div class="category-scores">
+                    <h4>Điểm theo danh mục:</h4>
+                    <div class="category-grid">
+                        ${Object.entries(results.category_scores).map(([category, score]) => `
+                            <div class="category-score">
+                                <span class="category-name">${category.toUpperCase()}</span>
+                                <span class="category-value score-${this.getScoreClass(score)}">${score.toFixed(1)}%</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="evaluation-details">
+                    <h4>Chi tiết từng test:</h4>
+                    <div class="test-details">
+                        ${results.detailed_results.map((result, index) => {
+                            if (result.success && result.evaluation) {
+                                const evaluation = result.evaluation;
+                                return `
+                                    <div class="test-item">
+                                        <div class="test-header">
+                                            <span class="test-number">Test ${index + 1}</span>
+                                            <span class="test-category">${result.test_case.category.toUpperCase()}</span>
+                                            <span class="test-score score-${this.getScoreClass(evaluation.score_percentage)}">${evaluation.score_percentage.toFixed(1)}%</span>
+                                        </div>
+                                        <div class="test-original">${result.test_case.original}</div>
+                                        <div class="test-metrics">
+                                            <span>Precision: ${evaluation.precision.toFixed(2)}</span>
+                                            <span>Recall: ${evaluation.recall.toFixed(2)}</span>
+                                            <span>F1: ${evaluation.f1_score.toFixed(2)}</span>
+                                            <span>Time: ${result.processing_time.toFixed(2)}ms</span>
+                                        </div>
+                                    </div>
+                                `;
+                            } else {
+                                return `
+                                    <div class="test-item failed">
+                                        <div class="test-header">
+                                            <span class="test-number">Test ${index + 1}</span>
+                                            <span class="test-category">${result.test_case.category.toUpperCase()}</span>
+                                            <span class="test-score failed">FAILED</span>
+                                        </div>
+                                        <div class="test-error">${result.error || 'Unknown error'}</div>
+                                    </div>
+                                `;
+                            }
+                        }).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Hiển thị kết quả
+        this.resultsSection.innerHTML = evaluationHTML;
+        this.showResults();
+    }
+
+    getScoreClass(score) {
+        if (score >= 90) return 'excellent';
+        if (score >= 80) return 'good';
+        if (score >= 70) return 'average';
+        if (score >= 60) return 'poor';
+        return 'very-poor';
     }
 }
 

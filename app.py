@@ -292,6 +292,34 @@ def get_performance():
         logging.error(f"❌ Lỗi lấy performance: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/auto_evaluate', methods=['POST'])
+def auto_evaluate():
+    """API chạy đánh giá tự động"""
+    try:
+        from test_auto_evaluation import AutoEvaluator
+        
+        # Khởi tạo evaluator
+        evaluator = AutoEvaluator(base_url=f"http://{request.host}")
+        
+        # Chạy đánh giá
+        results = evaluator.run_all_tests()
+        
+        # Lưu kết quả
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"evaluation_results_{timestamp}.json"
+        evaluator.save_results(results, filename)
+        
+        return jsonify({
+            'success': True,
+            'results': results,
+            'filename': filename,
+            'timestamp': datetime.now().isoformat()
+        })
+        
+    except Exception as e:
+        logging.error(f"❌ Lỗi auto evaluation: {str(e)}")
+        return jsonify({'error': f'Lỗi: {str(e)}'}), 500
+
 @app.errorhandler(404)
 def not_found(error):
     """Xử lý lỗi 404"""
