@@ -18,6 +18,7 @@ class SpellCheckerApp {
         this.clearBtn = document.getElementById('clear-btn');
         this.copyBtn = document.getElementById('copy-btn');
         this.autoEvaluateBtn = document.getElementById('auto-evaluate-btn');
+        this.generateTestBtn = document.getElementById('generate-test-btn');
         this.resultsSection = document.getElementById('results-section');
         this.loading = document.getElementById('loading');
         this.errorMessage = document.getElementById('error-message');
@@ -39,6 +40,7 @@ class SpellCheckerApp {
         this.clearBtn.addEventListener('click', () => this.clearText());
         this.copyBtn.addEventListener('click', () => this.copyResults());
         this.autoEvaluateBtn.addEventListener('click', () => this.autoEvaluate());
+        this.generateTestBtn.addEventListener('click', () => this.generateTest());
         
         // Auto-check on Enter
         this.textInput.addEventListener('keydown', (e) => {
@@ -503,6 +505,98 @@ class SpellCheckerApp {
         if (score >= 70) return 'average';
         if (score >= 60) return 'poor';
         return 'very-poor';
+    }
+
+    async generateTest() {
+        this.showLoading();
+        this.hideError();
+        this.hideResults();
+
+        try {
+            const response = await fetch('/api/generate_test', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    num_cases: 5,
+                    categories: null,
+                    error_type: null
+                })
+            });
+
+            const result = await response.json();
+            this.hideLoading();
+
+            if (response.ok && result.success) {
+                this.displayGeneratedTest(result.test_case);
+            } else {
+                this.showError(result.error || 'Có lỗi xảy ra khi tạo test data');
+            }
+
+        } catch (error) {
+            this.hideLoading();
+            this.showError('Không thể kết nối đến server');
+            console.error('Error:', error);
+        }
+    }
+
+    displayGeneratedTest(testCase) {
+        // Hiển thị test case được tạo
+        const testHTML = `
+            <div class="generated-test">
+                <h3><i class="fas fa-magic"></i> Test Data Generated</h3>
+                
+                <div class="test-info">
+                    <div class="test-category">
+                        <span class="label">Category:</span>
+                        <span class="value">${testCase.category.toUpperCase()}</span>
+                    </div>
+                    <div class="test-errors">
+                        <span class="label">Expected Errors:</span>
+                        <span class="value">${Object.keys(testCase.expected_corrections).length}</span>
+                    </div>
+                </div>
+
+                <div class="test-content">
+                    <div class="test-original">
+                        <h4>Generated Text (with errors):</h4>
+                        <div class="text-content">${testCase.original}</div>
+                    </div>
+                    
+                    <div class="test-expected">
+                        <h4>Expected Corrections:</h4>
+                        <div class="corrections-list">
+                            ${Object.entries(testCase.expected_corrections).map(([wrong, correct]) => `
+                                <div class="correction-item">
+                                    <span class="wrong">"${wrong}"</span>
+                                    <span class="arrow">→</span>
+                                    <span class="correct">"${correct}"</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-actions">
+                    <button class="btn btn-primary" onclick="app.loadTestIntoInput('${testCase.original.replace(/'/g, "\\'")}')">
+                        <i class="fas fa-edit"></i> Load into Input
+                    </button>
+                    <button class="btn btn-success" onclick="app.checkSpelling()">
+                        <i class="fas fa-search"></i> Check Spelling
+                    </button>
+                </div>
+            </div>
+        `;
+
+        // Hiển thị kết quả
+        this.resultsSection.innerHTML = testHTML;
+        this.showResults();
+    }
+
+    loadTestIntoInput(text) {
+        this.textInput.value = text;
+        this.textInput.focus();
     }
 }
 

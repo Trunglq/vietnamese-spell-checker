@@ -320,6 +320,38 @@ def auto_evaluate():
         logging.error(f"❌ Lỗi auto evaluation: {str(e)}")
         return jsonify({'error': f'Lỗi: {str(e)}'}), 500
 
+@app.route('/api/generate_test', methods=['POST'])
+def generate_test():
+    """API tạo test data tự động"""
+    try:
+        from test_data_generator import TestDataGenerator
+        
+        data = request.get_json() or {}
+        num_cases = data.get('num_cases', 5)
+        categories = data.get('categories', None)
+        error_type = data.get('error_type', None)
+        
+        generator = TestDataGenerator()
+        
+        if error_type:
+            test_cases = generator.generate_specific_error_test(error_type, num_cases)
+        else:
+            test_cases = generator.generate_test_cases(num_cases, categories)
+        
+        # Chọn một test case ngẫu nhiên để trả về
+        selected_case = random.choice(test_cases)
+        
+        return jsonify({
+            'success': True,
+            'test_case': selected_case,
+            'all_cases': test_cases,
+            'timestamp': datetime.now().isoformat()
+        })
+        
+    except Exception as e:
+        logging.error(f"❌ Lỗi generate test: {str(e)}")
+        return jsonify({'error': f'Lỗi: {str(e)}'}), 500
+
 @app.errorhandler(404)
 def not_found(error):
     """Xử lý lỗi 404"""

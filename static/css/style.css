@@ -160,6 +160,16 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-warning {
+    background: #ffc107;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: #e0a800;
+    transform: translateY(-2px);
+}
+
 /* Results Section */
 .results-section {
     padding: 30px;
@@ -769,4 +779,132 @@ body {
 
 .score.failed {
     color: #dc3545;
+}
+
+/* Generated Test */
+.generated-test {
+    padding: 20px;
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.generated-test h3 {
+    color: #856404;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.test-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.test-category, .test-errors {
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ffeaa7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test-category .label, .test-errors .label {
+    font-weight: 600;
+    color: #856404;
+}
+
+.test-category .value, .test-errors .value {
+    font-weight: bold;
+    color: #495057;
+}
+
+.test-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.test-original, .test-expected {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffeaa7;
+}
+
+.test-original h4, .test-expected h4 {
+    color: #856404;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.text-content {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.corrections-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.correction-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.correction-item .wrong {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.correction-item .arrow {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.correction-item .correct {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.test-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.test-actions .btn {
+    min-width: 150px;
+}
+
+@media (max-width: 768px) {
+    .test-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .test-actions {
+        flex-direction: column;
+    }
+    
+    .test-actions .btn {
+        width: 100%;
+    }
 } 
