@@ -217,27 +217,35 @@ class SpellCheckerApp {
     }
 
     displayOriginalText(text, errors, wordProbabilities) {
-        let highlightedText = text;
+        // Hiển thị văn bản gốc đơn giản, không highlight
+        this.originalText.textContent = text;
         
-        // Sort errors by position (reverse order to avoid position shifting)
-        const sortedErrors = [...errors].sort((a, b) => b.position - a.position);
-        
-        sortedErrors.forEach(error => {
-            const word = error.word;
-            const corrected = error.corrected;
-            const probability = wordProbabilities[word] || 0.5;
+        // Nếu có lỗi, thêm thông tin về lỗi ở dưới
+        if (errors && errors.length > 0) {
+            const errorInfo = document.createElement('div');
+            errorInfo.className = 'error-info';
+            errorInfo.innerHTML = `
+                <div class="error-summary">
+                    <strong>Phát hiện ${errors.length} lỗi chính tả:</strong>
+                </div>
+                <div class="error-list">
+                    ${errors.map(error => `
+                        <span class="error-item">
+                            <strong>"${error.word}"</strong> → <em>"${error.corrected}"</em>
+                        </span>
+                    `).join(', ')}
+                </div>
+            `;
             
-            const probabilityClass = this.getProbabilityClass(probability);
-            const errorClass = `error-highlight ${probabilityClass}`;
+            // Xóa error info cũ nếu có
+            const oldErrorInfo = this.originalText.parentNode.querySelector('.error-info');
+            if (oldErrorInfo) {
+                oldErrorInfo.remove();
+            }
             
-            const replacement = `<span class="${errorClass}" title="Gợi ý: ${corrected} (${Math.round(probability * 100)}%)">${word}</span>`;
-            
-            // Use regex to replace the word at the specific position
-            const regex = new RegExp(`\\b${this.escapeRegex(word)}\\b`, 'g');
-            highlightedText = highlightedText.replace(regex, replacement);
-        });
-        
-        this.originalText.innerHTML = highlightedText;
+            // Thêm error info mới
+            this.originalText.parentNode.appendChild(errorInfo);
+        }
     }
 
     getProbabilityClass(probability) {

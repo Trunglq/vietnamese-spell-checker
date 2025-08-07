@@ -534,6 +534,45 @@ body {
     border-bottom: 2px solid #7b1fa2 !important;
 }
 
+/* Error Info */
+.error-info {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.error-summary {
+    margin-bottom: 10px;
+    color: #856404;
+    font-weight: 600;
+}
+
+.error-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.error-item {
+    background: #f8f9fa;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    font-size: 0.85rem;
+}
+
+.error-item strong {
+    color: #dc3545;
+}
+
+.error-item em {
+    color: #28a745;
+    font-style: normal;
+}
+
 /* No Errors */
 .no-errors {
     text-align: center;
